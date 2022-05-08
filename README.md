@@ -1,1 +1,1 @@
-# CSS-HTML-JS-practic
+# CSS-HTML-JS-practice
