@@ -29,8 +29,112 @@ a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
 
-.content {
-
+body {
+    background: #e8e8e8 url("../img/ellipse_1_copy_4.png") 50% 130px no-repeat;
 }
 
+.content {
+    padding: 168px 0 137px 0;
+    max-width: 841px;
+    margin: 0 auto;
+}
 
+.content-header {
+    text-align: center;
+    margin: 0 0 70px 0;
+}
+
+.content-header-text1 {
+    opacity: 0.6;
+    color: #273d46;
+    font-family: Arial, sans-serif ;
+    font-size: 14px;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+}
+
+.content-header-text2 {
+    font-size: 36px;
+    line-height: 50px;
+    color: #273d46;
+}
+
+.content-img {
+    box-shadow: 0 15px 65px rgba(15, 16, 16, 0.15);
+    background-color: #e8e8e8;
+    padding: 10px;
+    margin-bottom: 85px;
+}
+
+.content-bottom {
+    padding: 0 45px 0 45px;
+}
+
+.content-bottom-text {
+    font-size: 24px;
+    line-height: 40px;
+    color: #53646b;
+    margin-bottom: 45px;
+}
+
+.content-bottom-text p {
+    margin: 0 0 45px 0;
+}
+
+.content-bottom-text p:last-child {
+    margin: 0;
+}
+
+.content-bottom-info-list {
+    margin-bottom: 60px;
+}
+
+.content-bottom-info-list li {
+    font-family: Arial, sans-serif;
+    margin-bottom: 13px;
+    font-size: 20px;
+    background: url("../img/chkIcn.jpg") left no-repeat;
+    padding-left: 35px;
+}
+
+.content-bottom-info-list li:nth-child(1) {
+    text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+    color: #273d46;
+}
+.content-bottom-info-list li:nth-child(2) {
+    font-style: italic;
+    color: #80b7b3;
+}
+.content-bottom-info-list li:nth-child(3) {
+    font-weight: 700;
+    color: #273d46;
+}
+.content-bottom-info-list li:nth-child(4) {
+    text-decoration: line-through;
+    color: #273d46;
+}
+
+.content-bottom-info-list li:nth-child(4) span {
+    opacity: 0.3;
+}
+
+.content-bottom-info-link {
+    height: 44px;
+    box-shadow: 0 6px 40px 0 rgba(128,183,179,0.54);
+    padding: 0 30px;
+    background-color: #80b7b3;
+    display: inline-block;
+    line-height: 44px;
+    border-radius: 24px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    color: #ffffff;
+}
+
+.content-bottom-info-link span {
+    padding-right: 30px;
+    background: url("../img/shape_2_9.png") right no-repeat;
+}
