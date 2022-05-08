@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before, *:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav, footer, header, aside{display: block;}
+html,body{
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family: inherit;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+body {
+    padding: 100px;
+    background: #e8e8e8 url("../img/ellipse_1_copy_4.png") 50% 130px no-repeat;
+}
+
+.liveList {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    color: #273d46;
+
+}
+
+.liveList li:nth-child(1) {
+    text-decoration: line-through;
+    background: url("../img/chkIcn.jpg") left no-repeat;
+    padding-left: 35px;
+}
+
+.liveList li:nth-child(2) {
+    font-weight: 700;
+    background: url("../img/chkIcn.jpg") left no-repeat;
+    padding-left: 35px;
+}
+
+.liveList li:nth-child(3) {
+    font-style: italic;
+    background: url("../img/chkIcn.jpg") left no-repeat;
+    padding-left: 35px;
+}
+
+.liveList li:nth-child(4) {
+    text-transform: uppercase;
+    background: url("../img/chkIcn.jpg") left no-repeat;
+    padding-left: 35px;
+}
+
+.liveList li:nth-child(1):hover {
+    color: #d55a5a;
+    background: url("../img/check_icon_95.png") left no-repeat;
+    padding-left: 35px;
+    text-decoration: none;
+}
+
+.liveList li:nth-child(2):hover {
+    color: #d55a5a;
+    background: url("../img/check_icon_95.png") left no-repeat;
+    padding-left: 35px;
+    font-weight: 400;
+}
+
+.liveList li:nth-child(3):hover {
+    color: #d55a5a;
+    background: url("../img/check_icon_95.png") left no-repeat;
+    padding-left: 35px;
+    font-style: normal;
+}
+
+.liveList li:nth-child(4):hover {
+    color: #d55a5a;
+    background: url("../img/check_icon_95.png") left no-repeat;
+    padding-left: 35px;
+    text-transform: none;
+}
+
+.liveButton {
+    margin: 150px;
+    box-shadow: 0 6px 40px 0 rgba(128,183,179,0.54);
+    padding: 0 30px;
+    background-color: #80b7b3;
+    display: inline-block;
+    line-height: 44px;
+    border-radius: 24px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.liveButton span {
+    color: #ffffff;
+    padding-right: 30px;
+    background: url("../img/shape_2_9.png") right no-repeat;
+}
+
+.liveButton:hover {
+    background-color: #3a5856;
+    box-shadow: 0px 6px 40px 0px rgba(128,183,179,0.54);
+}
+
+.liveButton:active {
+    background-color: #818181;
+}
+
+.inputForm {
+    margin: 0 100px;
+    width: 294px;
+    height: 52px;
+    border: 1px solid #b0b0b0;
+    border-radius: 15px;
+}
+
+.inputForm:focus {
+    border: 1px solid #7fbed5;
+    box-shadow: 0px 0px 20px -1px rgba(127,190,213,0.93);
+}
