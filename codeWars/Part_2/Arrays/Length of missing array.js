@@ -6,28 +6,26 @@
 // You have to write a method, that return the length of the missing array.
 
 function getLengthOfMissingArray(arrayOfArrays) {
-    console.log(arrayOfArrays)
-
-    if (arrayOfArrays.length === 0) {return 0}
-        if (typeof arrayOfArrays === 'number') {
-            arrayOfArrays.sort()
-
-        } else {
-            let res = arrayOfArrays.map(item => item.length).sort()
-            console.log(res)
-            for (let i = 0; i < res.length; i++) {
-                if (res[i + 1] - res[i] !== 1) {
-                    return res[i] + 1
-                }
+    if (arrayOfArrays === null || arrayOfArrays.length === 0) {
+        return 0
+    }
+    if (Array.isArray(arrayOfArrays)) {
+        let res2 = []
+        for (let i = 0; i < arrayOfArrays.length; i++) {
+            if (arrayOfArrays[i] === null || arrayOfArrays[i].length === 0) {return 0}
+            res2.push(arrayOfArrays[i].length)
+        }
+        res2.sort((a, b) => a-b)
+        for (let i = 0; i < res2.length; i++) {
+            if (res2[i + 1] === 0 || res2[i] === 0) {
+                return 0
+            }
+            if (res2[i + 1] - res2[i] !== 1) {
+                return res2[i] + 1
             }
         }
-
+    }
 }
 
 
-console.log(getLengthOfMissingArray([4, 1, 4, 4, 1]))
-console.log(getLengthOfMissingArray([ ]))
-console.log(getLengthOfMissingArray([ [ 5, 2, 9 ], [ 4, 5, 1, 1 ], [ 1 ], [ 5, 6, 7, 8, 9 ]]))
-console.log(getLengthOfMissingArray([ [ 1, 2 ], [ 4, 5, 1, 1 ], [ 1 ], [ 5, 6, 7, 8, 9 ]]))
-console.log(getLengthOfMissingArray([ [ null ], [ null, null, null ] ]))
-console.log(getLengthOfMissingArray([ [ 'a', 'a', 'a' ], [ 'a', 'a' ], [ 'a', 'a', 'a', 'a' ], [ 'a' ], [ 'a', 'a', 'a', 'a', 'a', 'a' ]]))
+console.log(getLengthOfMissingArray([ [ null ], [ null, null, null ]]))
