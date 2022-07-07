@@ -10,6 +10,7 @@ function explode(s) {
 
 }
 
+console.log(explode('123456'))
 // Alternative:
 
 // function explode(s) {
